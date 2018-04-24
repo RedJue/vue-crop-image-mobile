@@ -20,13 +20,18 @@
   </div>
 </template>
 <script>
- import CropManage from '../manage.js'
+ import CropManage from '../manage'
 export default {
     name:"crop-view",
     props:{
        zIndex:{
            type:Number
        }
+    },
+    data(){
+      return {
+          
+      }
     },
   computed: {
     containerStyle() {

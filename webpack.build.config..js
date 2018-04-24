@@ -2,11 +2,14 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './example/main.js',
+  entry: './lib/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'build.js'
+    filename: 'crop-image-mobile.js',
+    library: 'cropImageMobile', 
+    libraryTarget: 'umd', 
+    umdNamedDefine: true 
   },
   module: {
     rules: [
@@ -48,8 +51,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     noInfo: true,
-    overlay: true,
-    host:'192.168.126.186'
+    overlay: true
   },
   performance: {
     hints: false

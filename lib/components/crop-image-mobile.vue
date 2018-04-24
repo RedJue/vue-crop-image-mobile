@@ -1,5 +1,5 @@
 <template>
-  <div class="crop-container" :style="containerStyle">
+  <div class="crop-container" >
     <crop-view :zIndex="layerZIndex+2" ref="corpView"/>
     <crop-image :zIndex="layerZIndex+1" @canvasImage="getImageData"/>
     <crop-layer :opacity="layerOpacity" :color="layerColor" :zIndex="layerZIndex" />
@@ -7,10 +7,10 @@
 </template>
 
 <script>
-import CropManage from "../manage.js";
-import cropView from "./view.vue";
-import cropLayer from "./layer.vue";
-import cropImage from "./image.vue";
+import CropManage from "../manage";
+import cropView from "./view";
+import cropLayer from "./layer";
+import cropImage from "./image";
 export default {
   name: "crop-image-mobile",
   props: {
@@ -26,11 +26,16 @@ export default {
       type: Number,
       default: 999
     },
-    height: {
-      type: String
-    },
     imageFile:{
-      require:true
+      required:true
+    },
+    quality:{
+      type:[Number,String],
+      default:0.7
+    },
+    autoCompress:{
+      type:Boolean,
+      default:true
     }
   },
   components: {
@@ -50,25 +55,12 @@ export default {
       scale:1
     };
   },
-   computed: {
-    containerStyle() {
-      return {
-        height: this.viewportHeight
-      };
-    }
-  },
-  created() {
-    this.viewportHeight = this.height
-      ? this.height
-      : `${CropManage.viewportHeight}px`
-    this.viewportWidth =`${CropManage.viewportWidth}px`  
-  },
   mounted(){
    this.corpView = this.$refs.corpView.$el  
    CropManage.cropImageInit(this);
   },
   watch:{
-     imageFile(){
+     imageFile(val){
        CropManage.cropImageInit(this);
      }
   },
@@ -76,7 +68,7 @@ export default {
     getImageData(instance){
        this.imageInstance = instance
     },
-    cropImage(cb){
+     cropImage(cb){
       CropManage.cropImage(this,cb)
     }
   }
@@ -85,10 +77,17 @@ export default {
 <style>
 .crop-container {
   display: flex;
-  position: relative;
+  position: absolute;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
+
+
 </style>
 
 

@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>vue-crop-image-mobile</title>
-  </head>
-  <body>
+</head>
+<style>
+    #app {
+        font-family: "Avenir", Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .uploadInput {
+        display: none;
+    }
+
+    .corpBtn,
+    .upload {
+        border: 1px solid #1ba5fa;
+        background-color: #1ba5fa;
+        border-radius: 4px;
+        width: 100px;
+        height: 40px;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        line-height: 2;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    .showImage {
+        width: 80px;
+        height: 80px;
+        border: 1px solid red;
+        top: 10px;
+        left: 5%;
+    }
+
+    .cropBar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+    }
+
+    .cropComp {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 0;
+    }
+</style>
+
+<body>
     <div id="app">
         <div class="cropBar">
             <div class="showImage">
@@ -16,14 +77,8 @@
         </div>
         <input type="file" @change="fileCb" class="uploadInput" ref="uploadInput">
         <div class="cropComp">
-            <crop-image-mobile 
-            :image-file="file" 
-            :layer-zIndex="20170424" 
-            :layer-opacity="1" 
-            layer-color="#000" 
-            :auto-compress="false" 
-            :quality="0.7"
-                ref="cropImageMobile" />
+            <crop-image-mobile :image-file="file" :layer-zIndex="20170424" :layer-opacity="1" layer-color="#000" :auto-compress="false"
+                :quality="0.7" ref="cropImageMobile" />
         </div>
     </div>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
@@ -51,4 +106,5 @@
         }
     })
 </script>
+
 </html>

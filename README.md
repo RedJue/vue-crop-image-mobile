@@ -144,6 +144,4 @@ use in HTML.
 
 ## rendering
 
-<img src="https://github.com/RedJue/vue-crop-image-mobile/blob/master/example/screenshot/screenshot1.gif" width="281" height="500"/>
-
-<img src="https://github.com/RedJue/vue-crop-image-mobile/blob/master/example/screenshot/screenshot2.gif" width="281" height="500"/>
+<img src="https://github.com/RedJue/vue-crop-image-mobile/blob/master/example/screenshot/screenshot1.gif" width="281" height="500"/> <img src="https://github.com/RedJue/vue-crop-image-mobile/blob/master/example/screenshot/screenshot2.gif" width="281" height="500"/>

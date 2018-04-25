@@ -115,7 +115,7 @@ use in HTML.
         </div>
     </div>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/crop-image-mobile/dist/crop-image-mobile.js"></script>
+    <script src="https://unpkg.com/crop-image-mobile@version/dist/crop-image-mobile.js"></script>
 </body>
 <script>
     new Vue({
@@ -144,11 +144,11 @@ use in HTML.
 
 ## rendering
 
-<img src="https://github.com/RedJue/vue-crop-image-mobile/blob/master/example/screenshot/screenshot.gif" width="281" height="500"/>
+<img src="https://github.com/RedJue/vue-crop-image-mobile/blob/master/example/assets/screenshot.gif" width="281" height="500"/>
 
 ## example
 
-An example is provided for reference and follow the steps below.
+an example is provided for reference and follow the steps below.
 
 1. ```Bash
    git clone https://github.com/RedJue/vue-crop-image-mobile.git
@@ -160,7 +160,8 @@ An example is provided for reference and follow the steps below.
    npm run dev
    ```
 
-You can also view it on the mobile.
+you can also view it on the mobile.
 
 ## Online
-
+you can scan the qr code below to preview.
+<img src="https://github.com/RedJue/vue-crop-image-mobile/blob/master/example/assets/qrcode.png" width="280" height="280"/>

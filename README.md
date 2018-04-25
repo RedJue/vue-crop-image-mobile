@@ -146,11 +146,11 @@ use in HTML.
 
 an example is provided for reference and follow the steps below.
 
- ```Bash
+```Bash
    git clone https://github.com/RedJue/vue-crop-image-mobile.git
  ```
 
-2. ```bash
+```bash
    cd vue-crop-image-mobile
    npm install
    npm run dev
@@ -181,4 +181,5 @@ cropImage(callback(url))
 
 ## Online
 you can scan the qr code below to preview.
+
 <img src="https://github.com/RedJue/vue-crop-image-mobile/blob/master/example/assets/qrcode.png" width="280" height="280"/>

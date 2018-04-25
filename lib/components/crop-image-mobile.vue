@@ -15,7 +15,7 @@ export default {
   name: "crop-image-mobile",
   props: {
     layerOpacity: {
-      type: Number,
+      type: [Number,String],
       default: 1
     },
     layerColor: {

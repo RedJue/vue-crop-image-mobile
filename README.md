@@ -142,17 +142,13 @@ use in HTML.
 </html>
 ```
 
-## rendering
-
-<img src="https://github.com/RedJue/vue-crop-image-mobile/blob/master/example/assets/screenshot.gif" width="281" height="500"/>
-
 ## example
 
 an example is provided for reference and follow the steps below.
 
-1. ```Bash
+ ```Bash
    git clone https://github.com/RedJue/vue-crop-image-mobile.git
-   ```
+ ```
 
 2. ```bash
    cd vue-crop-image-mobile
@@ -161,6 +157,27 @@ an example is provided for reference and follow the steps below.
    ```
 
 you can also view it on the mobile.
+
+## configuration
+
+|     props     |      type       |               description                | default |
+| :-----------: | :-------------: | :--------------------------------------: | :-----: |
+|  image-file   |      File       |              the image flow              |  null   |
+| layer-zIndex  |     Number      |             layer of zindex              |   999   |
+| layer-opacity | [Number,String] |             layer of opacity             |    1    |
+|  layer-color  |     String      |              layer of color              |  #000   |
+| auto-compress |     Boolean     |  Whether to open automatic compression.  |  true   |
+|    quality    | [Number,String] | The compression quality，automatically compressed to false when enabled. |   0.7   |
+
+instance methods：
+
+```javascript
+cropImage(callback(url))
+```
+
+## rendering
+
+<img src="https://github.com/RedJue/vue-crop-image-mobile/blob/master/example/assets/screenshot.gif" width="281" height="500"/>
 
 ## Online
 you can scan the qr code below to preview.

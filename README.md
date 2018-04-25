@@ -4,7 +4,9 @@ a mobile end cropping plug-in is based on vue.
 
 ## Introduction
 
-vue-crop-image-mobile is a lightweight mobile end clipping plug-in.it is based on [Vue.js](https://github.com/vuejs/vue),and very easy to use.  Support UMD,so not only for vue templates, but also for HTML.the plugin also fixes IOS photo flip and is more friendly.
+vue-crop-image-mobile is a lightweight mobile end clipping plug-in.it is based on [Vue.js](https://github.com/vuejs/vue),and very easy to use.  Support UMD,so not only for vue templates, but also for HTML.
+
+the plugin also fixes IOS photo flip and is more friendly.
 
 ## npm
 

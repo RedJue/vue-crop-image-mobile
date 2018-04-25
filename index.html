@@ -6,7 +6,49 @@
     <title>vue-crop-image-mobile</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script src="./dist/build.js"></script>
-  </body>
+    <div id="app">
+        <div class="cropBar">
+            <div class="showImage">
+                <img :src="imageCorpUrl" alt="" width="100%" height="100%">
+            </div>
+            <button @click="uploadImage" class="upload">上传图片</button>
+            <button @click="cropImage" class="corpBtn">裁剪</button>
+        </div>
+        <input type="file" @change="fileCb" class="uploadInput" ref="uploadInput">
+        <div class="cropComp">
+            <crop-image-mobile 
+            :image-file="file" 
+            :layer-zIndex="20170424" 
+            :layer-opacity="1" 
+            layer-color="#000" 
+            :auto-compress="false" 
+            :quality="0.7"
+                ref="cropImageMobile" />
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="dist/crop-image-mobile.js"></script>
+</body>
+<script>
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                file: "",
+                imageCorpUrl: ""
+            };
+        },
+        methods: {
+            fileCb(e) {
+                this.file = e.target.files[0];
+            },
+            cropImage() {
+                this.$refs.cropImageMobile.cropImage(url => (this.imageCorpUrl = url));
+            },
+            uploadImage() {
+                this.$refs.uploadInput.click();
+            }
+        }
+    })
+</script>
 </html>

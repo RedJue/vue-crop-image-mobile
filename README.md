@@ -148,13 +148,13 @@ an example is provided for reference and follow the steps below.
 
 ```Bash
    git clone https://github.com/RedJue/vue-crop-image-mobile.git
- ```
+```
 
 ```bash
    cd vue-crop-image-mobile
    npm install
    npm run dev
-   ```
+```
 
 you can also view it on the mobile.
 
@@ -183,3 +183,7 @@ cropImage(callback(url))
 you can scan the qr code below to preview.
 
 <img src="https://github.com/RedJue/vue-crop-image-mobile/blob/master/example/assets/qrcode.png" width="280" height="280"/>
+
+## License
+
+MIT.

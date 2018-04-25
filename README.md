@@ -4,13 +4,9 @@ a mobile end cropping plug-in is based on vue.
 
 ## Introduction
 
-------------
-
 vue-crop-image-mobile is a lightweight mobile end clipping plug-in.it is based on [Vue.js](https://github.com/vuejs/vue),and very easy to use.  Support UMD,so not only for vue templates, but also for HTML.
 
 ## npm
-
-------------
 
 Link: [https://www.npmjs.com/package/vue-crop-image-mobile](https://www.npmjs.com/package/vue-crop-image-mobile)
 
@@ -19,25 +15,19 @@ $ npm install vue-crop-image-mobile --save
 ```
 ## yarn
 
-------
-
 ```bash
 $ yarn add vue-crop-image-mobile --save
 ```
 
 ## CDN
 
-------------
-
 Link: [https://unpkg.com/vue-crop-image-mobile@version/dist/crop-image-mobile.js](https://unpkg.com/vue-crop-image-mobile@version/dist/crop-image-mobile.js) (version is important)
 
 ## Usage
 
-------
-
 use in Vue-template.
 
-```Vue
+```javascript
 import Vue from 'vue'
 import cropImageMobile from 'vue-crop-image-mobile'
 Vue.use(cropImageMobile)
@@ -45,7 +35,7 @@ Vue.use(cropImageMobile)
 
 It's used in template like this.
 
-```vue
+```Html
 <template>
   <div id="app">
     <div class="cropBar">
@@ -154,5 +144,6 @@ use in HTML.
 
 ## rendering
 
-------
+<img src="https://github.com/RedJue/vue-crop-image-mobile/blob/master/example/screenshot/screenshot1.gif" width="281" height="500"/>
 
+<img src="https://github.com/RedJue/vue-crop-image-mobile/blob/master/example/screenshot/screenshot2.gif" width="281" height="500"/>

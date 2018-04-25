@@ -150,11 +150,11 @@ use in HTML.
 
 an example is provided for reference and follow the steps below.
 
-1. ```Bash
+```Bash
    git clone https://github.com/RedJue/vue-crop-image-mobile.git
    ```
 
-2. ```bash
+```bash
    cd vue-crop-image-mobile
    npm install
    npm run dev

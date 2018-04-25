@@ -183,3 +183,5 @@ cropImage(callback(url))
 you can scan the qr code below to preview.
 
 <img src="https://github.com/RedJue/vue-crop-image-mobile/blob/master/example/assets/qrcode.png" width="280" height="280"/>
+## License
+MIT

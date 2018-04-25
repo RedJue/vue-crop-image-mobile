@@ -1,6 +1,16 @@
 var path = require('path')
 var webpack = require('webpack')
-
+var path = require('path')
+var os=require('os'),
+    iptable={},
+    ifaces=os.networkInterfaces();
+for (let dev in ifaces) {
+  ifaces[dev].forEach(function(details,alias){
+    if (details.family=='IPv4') {
+      iptable[dev+(alias?':'+alias:'')]=details.address;
+    }
+  });
+}
 module.exports = {
   entry: './example/main.js',
   output: {
@@ -49,7 +59,7 @@ module.exports = {
     historyApiFallback: true,
     noInfo: true,
     overlay: true,
-    host:'192.168.126.186'
+    host:iptable['en0:1']
   },
   performance: {
     hints: false

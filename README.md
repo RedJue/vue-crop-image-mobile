@@ -145,3 +145,22 @@ use in HTML.
 ## rendering
 
 <img src="https://github.com/RedJue/vue-crop-image-mobile/blob/master/example/screenshot/screenshot.gif" width="281" height="500"/>
+
+## example
+
+An example is provided for reference and follow the steps below.
+
+1. ```Bash
+   git clone https://github.com/RedJue/vue-crop-image-mobile.git
+   ```
+
+2. ```bash
+   cd vue-crop-image-mobile
+   npm install
+   npm run dev
+   ```
+
+You can also view it on the mobile.
+
+## Online
+

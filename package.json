@@ -1,7 +1,7 @@
 {
   "name": "vue-crop-image-mobile",
   "description": "cut the picture for the mobile end.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/crop-image-mobile.js",
   "author": "RedJue <pingfj77@gmail.com>",
   "license": "MIT",

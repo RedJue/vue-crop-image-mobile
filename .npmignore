@@ -3,6 +3,7 @@ node_modules/
 example
 .vscode
 webpack.build.config.js
+package-lock.json
 webpack.config.js
 .gitignore
 .gitattributes

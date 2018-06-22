@@ -174,7 +174,7 @@ you can also view it on the mobile.
 instance methods：
 
 ```javascript
-cropImage(callback(url))
+cropImage(callback(url,blob))
 ```
 
 ## rendering
